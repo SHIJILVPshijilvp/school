@@ -1,0 +1,26 @@
+  {% extends 'base.html' %}
+{% load static %}
+  {% block content %}
+
+            <div class="col-md-3" >
+                <h5 style="color:green" >PROFILES</h5>
+                {% for i in profile %}
+            <div class=" shadow card" style=margin-bottom:15px;background-color:white>
+  <div class="card-body">
+    <h5 class="card-title">{{i.name}}</h5>
+      <p class="card-text">{{i.address}}</p>
+      <p class="card-text">{{i.department}}</p>
+      <p class="card-text">{{i.phone}}</p>
+      <p class="card-text">{{i.age}}</p>
+      <p class="card-text">{{i.DOB}}</p>
+      <p class="card-text">{{i.mail_id}}</p>
+      <p class="card-text">{{i.gender}}</p>
+      <p class="card-text">{{i.course}}</p>
+  </div>
+
+
+            </div>
+                <br>
+                 {% endfor %}
+            </div>
+       {% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+  {% block content %}
+
+
+
+
+<h1>SCHOOL STORE</h1>
+<a style="width:200px;" href="{% url 'schoolapp:login' %}" class="btn btn-success btn-block my_custom_button">CREATE PROFILE</a>
+<a style="width:200px;" href="{% url 'schoolapp:profile' %}" class="btn btn-success btn-block my_custom_button">EXISTING PROFILES</a>
+{% endblock %}

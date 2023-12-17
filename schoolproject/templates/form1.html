@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+  {% block content %}
+
+<h1>PROFILE</h1>
+<form action='add' method="post">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Enter your username"><br>
+    <input type="date" name="DOB" placeholder="Enter your DOB"><br>
+    <input type="number" name="age" placeholder="Enter your age"><br>
+    <input type="text" name="gender" placeholder="Enter gender"><br>
+    <input type="text" name="phone" placeholder="Enter your phone number"><br>
+    <input type="email" name="mail_id" placeholder="Enter your email id"><br>
+    <input type="text" name="address" placeholder="Enter your address"><br>
+    <input class="dropdown-menu">Department:
+       <select id="department" name="department">
+          <option value="Science">Computer Science</option>
+          <option value="Humanities">Humanities</option>
+          <option value="Biology">Biology</option>
+          <option value="Commerce">Commerce</option>
+          <option value="Mathematics">Mathematics</option>
+          <option value="Physics">Physics</option>
+       </select><br>
+    <input type="text" name="course" placeholder="Enter your course"><br>
+    <input type="submit">
+    </form>
+    <br>
+<br>
+    <br>
+    <br>
+
+ {% endblock %}
+
+
